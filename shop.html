@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetPlace</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    </head>
+    <script src="shopController.js"></script> <!-- Inclusão do meu arquivo JS -->
+    <div class="container">
+        <header class="css-header">
+            <div style="display: flex">
+                <img src="imageLogo.png" class="css-logo" alt="imagemLogo">
+                <h1><strong>&ensp;PETPLACE</strong></h1>
+            </div>
+            <div class="navbar">
+                <a class="item-navbar hover-btn" href="inicial.html"><h3>HOME</h3></a>
+                <a class="item-navbar hover-btn" href="servicos.html"><h3>SERVIÇOS</h3></a>
+                <a class="item-navbar hover-btn" href="shop.html"><h3>SHOP</h3></a>
+                <a class="item-navbar hover-btn" href="minhaConta.html"><h3>MINHA CONTA</h3></a>
+            </div>
+        </header>
+        <body>
+            <div class="css-body">
+                <hr>
+                <p>
+                    Encontre as melhores opções de alimentação para o seu pet no PetPlace. Nossas 
+                    rações são cuidadosamente selecionadas para fornecer uma nutrição balanceada 
+                    e de alta qualidade para o seu amigo peludo. Com ingredientes premium e formulações 
+                    especializadas, garantimos que seu pet receba os nutrientes essenciais para uma vida 
+                    saudável e vibrante.
+                </p>
+                <hr>
+                <div class="section-racao">
+                    <input type="radio" class="slide-controller" name="slide" checked />
+                    <input type="radio" class="slide-controller" name="slide" />
+                    <input type="radio" class="slide-controller" name="slide" />
+                    <input type="radio" class="slide-controller" name="slide" />
+
+                    <div class="slide-show">
+                        <ul class="slides-list">
+                            <li class="slide">
+                                <img src="imagesShop\image1.png" style="width: 235px; height: auto;" />
+                                <h5 id="racaoUmidaGato">Ração úmida gato</h5>
+                                <h4 id="valorRacaoUmidaGato">R$65,90</h4>
+                                <button class="css-btn" onclick="goToCarrinho('umidaGato')">COMPRAR</button>
+                            </li>
+                            <li class="slide">
+                                <img src="imagesShop\image2.png" style="width: 235px; height: auto;" />
+                                <h5 id="racaoSecaGato">Ração seca gato</h5>
+                                <h4 id="valorRacaoSecaGato">R$76,90</h4>
+                                <button class="css-btn" onclick="goToCarrinho('secaGato')">COMPRAR</button>
+                            </li>
+                            <li class="slide">
+                                <img src="imagesShop\image3.png" style="width: 235px; height: auto;" />
+                                <h5 id="racaoUmidaCachorro">Ração úmida cachorro</h5>
+                                <h4 id="valorRacaoUmidaCachorro">R$84,90</h4>
+                                <button class="css-btn" onclick="goToCarrinho('umidaCachorro')">COMPRAR</button>
+                            </li>
+                            <li class="slide">
+                                <img src="imagesShop\image4.png" style="width: 235px; height: auto;" />
+                                <h5 id="racaoSecaCachorro">Ração seca cachorro</h5>
+                                <h4 id="valorRacaoSecaCachorro">R$72,90</h4>
+                                <button class="css-btn" onclick="goToCarrinho('secaCachorro')">COMPRAR</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </body>
+        <footer id="rodape" style="margin-top: 20px">
+            <address>
+                Agendamentos <a href="agendamento.html">aqui</a> <br/>
+                Telefone: +55 (54) 99223-9890 <br/>
+                <a href="mailto:fulano@mail.com?cc=beltrano@mail.com
+                    &bcc=ciclano@mail.com
+                    &subject=TituloDoEmail
+                    &body=E-mail teste, favor não responda">
+                    Entre em contato por e-mail
+                </a> <br/>
+                Autoria: Augusto J. Rizzi
+            </address>
+        </footer>
+    </div>
+</html>

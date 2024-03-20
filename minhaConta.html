@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetPlace</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    </head>
+    <script src="minhaContaController.js"></script> <!-- Inclusão do meu arquivo JS -->
+    <div class="container">
+        <header class="css-header">
+            <div style="display: flex">
+                <img src="imageLogo.png" class="css-logo" alt="imagemLogo">
+                <h1><strong>&ensp;PETPLACE</strong></h1>
+            </div>
+            <div class="navbar">
+                <a class="item-navbar hover-btn" href="inicial.html"><h3>HOME</h3></a>
+                <a class="item-navbar hover-btn" href="servicos.html"><h3>SERVIÇOS</h3></a>
+                <a class="item-navbar hover-btn" href="shop.html"><h3>SHOP</h3></a>
+                <a class="item-navbar hover-btn" href="minhaConta.html"><h3>MINHA CONTA</h3></a>
+            </div>
+        </header>
+        <body>
+            <hr>
+            <h1>Minha conta</h1>
+            <p>
+                Registre-se agora para acesso exclusivo aos melhores produtos e serviços para o seu pet! 
+                Basta fornecer seu nome, e-mail, senha segura e CEP para começar a desfrutar de ofertas 
+                personalizadas e conveniência na sua experiência de compras no PetPlace. Junte-se a nós 
+                hoje e faça parte da nossa comunidade de amantes de pets!
+            </p>
+            <h4>Escolha uma das opções abaixo.</h4>
+            <div class="minha-conta-btn">
+                <button class="css-btn-minha-conta" onclick="goToCadastrarConta()">CADASTRAR CONTA</button>
+                <button class="css-btn-minha-conta" onclick="goToCadastrarPet()">CADASTRAR PET</button>
+            </div>
+            <hr>
+        </body>
+        <footer id="rodape">
+            <address>
+                Agendamentos <a href="agendamento.html">aqui</a> <br/>
+                Telefone: +55 (54) 99223-9890 <br/>
+                <a href="mailto:fulano@mail.com?cc=beltrano@mail.com
+                    &bcc=ciclano@mail.com
+                    &subject=TituloDoEmail
+                    &body=E-mail teste, favor não responda">
+                    Entre em contato por e-mail
+                </a> <br/>
+                Autoria: Augusto J. Rizzi
+            </address>
+        </footer>
+    </div>
+</html>

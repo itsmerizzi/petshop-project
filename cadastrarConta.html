@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetPlace</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    </head>
+    <script src="minhaContaController.js"></script> <!-- Inclusão do meu arquivo JS -->
+    <div class="container">
+        <header class="css-header">
+            <div style="display: flex">
+                <img src="imageLogo.png" class="css-logo" alt="imagemLogo">
+                <h1><strong>&ensp;PETPLACE</strong></h1>
+            </div>
+            <div class="navbar">
+                <a class="item-navbar hover-btn" href="inicial.html"><h3>HOME</h3></a>
+                <a class="item-navbar hover-btn" href="servicos.html"><h3>SERVIÇOS</h3></a>
+                <a class="item-navbar hover-btn" href="shop.html"><h3>SHOP</h3></a>
+                <a class="item-navbar hover-btn" href="minhaConta.html"><h3>MINHA CONTA</h3></a>
+            </div>
+        </header>
+        <body>
+            <hr>
+            <h1>Cadastrar conta</h1>
+            <h4>Preencha os dados abaixo.</h4>
+            <div class="minha-conta-btn">
+                <label for="nome">Nome</label>
+                    <input class="input-css" type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                    <input class="input-css" type="email" id="email" name="email" required>
+                <label for="cep">CEP</label>
+                    <input class="input-css" type="text" id="cep" name="cep" required>
+                <label for="data-nascimento">Data de nascimento</label>
+                    <input class="input-css" type="text" id="data-nascimento" name="data-nascimento" required>
+                <label for="senha">Senha</label>
+                    <input class="input-css" type="password" id="senha" name="senha" required>
+            </div>
+            <button class="css-btn-minha-conta" onclick="cadastrarConta()">CADASTRAR CONTA</button>
+            <hr>
+        </body>
+        <footer id="rodape">
+            <address>
+                Agendamentos <a href="agendamento.html">aqui</a> <br/>
+                Telefone: +55 (54) 99223-9890 <br/>
+                <a href="mailto:fulano@mail.com?cc=beltrano@mail.com
+                    &bcc=ciclano@mail.com
+                    &subject=TituloDoEmail
+                    &body=E-mail teste, favor não responda">
+                    Entre em contato por e-mail
+                </a> <br/>
+                Autoria: Augusto J. Rizzi
+            </address>
+        </footer>
+    </div>
+</html>

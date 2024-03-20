@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetPlace</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    </head>
+    <script src="servicosController.js"></script> <!-- Inclusão do meu arquivo JS -->
+    <div class="container">
+        <header class="css-header">
+            <div style="display: flex">
+                <img src="imageLogo.png" class="css-logo" alt="imagemLogo">
+                <h1><strong>&ensp;PETPLACE</strong></h1>
+            </div>
+            <div class="navbar">
+                <a class="item-navbar hover-btn" href="inicial.html"><h3>HOME</h3></a>
+                <a class="item-navbar hover-btn" href="servicos.html"><h3>SERVIÇOS</h3></a>
+                <a class="item-navbar hover-btn" href="shop.html"><h3>SHOP</h3></a>
+                <a class="item-navbar hover-btn" href="minhaConta.html"><h3>MINHA CONTA</h3></a>
+            </div>
+        </header>
+        <body>
+            <hr>
+            <h1>Agendamento</h1>
+            <p>
+                Abaixo é possível escolher uma de nossas duas opções de serviço, assim
+                como também é possível escolher a opção de tele-busca ou não.
+            </p>
+            <h4>Escolha uma das opções abaixo.</h4>
+            <p for="servicos">Tipo de serviço</p>
+            <div>
+                <input type="radio" id="banho" name="servicos" required>
+                <label for="servicos" id="banho">Banho</label>
+            </div>
+            <div style="margin-bottom: 20px">
+                <input type="radio" id="tosa" name="servicos" required>
+                <label for="servicos" id="tosa">Tosa</label>
+            </div>
+            <div style="margin-bottom: 10px">
+                <input type="checkbox" id="telebusca" name="telebusca">
+                <label for="telebusca">Tele-busca</label>
+            </div>
+            <div style="margin-bottom: 20px">
+                <label for="dataHora">Data e Hora para o agendamento:</label>
+                <input type="datetime-local" class="data-hora-css" id="dataHora" name="dataHora">
+            </div>
+            <div class="minha-conta-btn">
+                <button class="css-btn-minha-conta" onclick="agendarServico()">AGENDAR</button>
+            </div>
+            <hr>
+        </body>
+        <footer id="rodape">
+            <address>
+                Agendamentos <a href="agendamento.html">aqui</a> <br/>
+                Telefone: +55 (54) 99223-9890 <br/>
+                <a href="mailto:fulano@mail.com?cc=beltrano@mail.com
+                    &bcc=ciclano@mail.com
+                    &subject=TituloDoEmail
+                    &body=E-mail teste, favor não responda">
+                    Entre em contato por e-mail
+                </a> <br/>
+                Autoria: Augusto J. Rizzi
+            </address>
+        </footer>
+    </div>
+    <script>
+        // Função que será chamada quando a página for carregada
+        window.onload = function() {
+            // Obtém o parâmetro da URL
+            let urlParams = new URLSearchParams(window.location.search);
+            let parametro = urlParams.get('agendamento');
+            
+            // Verifica se o parâmetro foi passado
+            if (parametro !== null) {
+                // Chama outra função usando o parâmetro
+                selectAgendamento(parametro);
+            }
+        }
+    </script>
+</html>

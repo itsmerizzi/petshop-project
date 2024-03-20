@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PetPlace</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    </head>
+    <script src="servicosController.js"></script> <!-- Inclusão do meu arquivo JS -->
+    <div class="container">
+        <header class="css-header">
+            <div style="display: flex">
+                <img src="imageLogo.png" class="css-logo" alt="imagemLogo">
+                <h1><strong>&ensp;PETPLACE</strong></h1>
+            </div>
+            <div class="navbar">
+                <a class="item-navbar hover-btn" href="inicial.html"><h3>HOME</h3></a>
+                <a class="item-navbar hover-btn" href="servicos.html"><h3>SERVIÇOS</h3></a>
+                <a class="item-navbar hover-btn" href="shop.html"><h3>SHOP</h3></a>
+                <a class="item-navbar hover-btn" href="minhaConta.html"><h3>MINHA CONTA</h3></a>
+            </div>
+        </header>
+        <body>
+            <hr>
+            <div class="section-banho">
+                <img src="imagesServicos\image1.png" style="text-align: left; width: 405px; height: 270px;" alt="image-banho">
+                <div style="margin-left: 20px">
+                    <h3>Banho</h3>
+                    <h4>R$35,00 - Pet pequeno<br/>R$65,00 - Pet grande</h4>
+                    <p class="font-size">
+                        Dê ao seu pet o tratamento que ele merece com os nossos banhos profissionais. 
+                        Garantimos uma experiência de banho rápida, segura e revigorante para deixar 
+                        seu amigo peludo limpo e cheiroso!
+                    </p>
+                    <button class="css-btn" onclick="agendarBanho()">AGENDAR</button>
+                </div>
+            </div>
+            <div class="section-tosa">
+                <img src="imagesServicos\image2.png" style="text-align: right; width: 445px; height: 265px;" alt="image-tosa">
+                <div>
+                    <h3>Tosa</h3>
+                    <h4>R$70,00 - Pet pequeno<br/>R$90,00 - Pet grande</h4>
+                    <p class="font-size">
+                        Oferecemos serviços profissionais de tosa para manter seu pet sempre elegante 
+                        e confortável. Confie em nossa equipe experiente para deixar seu amigo de quatro 
+                        patas ainda mais bonito e feliz!
+                    </p>
+                    <button class="css-btn" onclick="agendarTosa()">AGENDAR</button>
+                </div>
+            </div>
+            <hr>
+        </body>
+        <footer id="rodape" style="margin-top: 20px">
+            <address>
+                Agendamentos <a href="agendamento.html">aqui</a> <br/>
+                Telefone: +55 (54) 99223-9890 <br/>
+                <a href="mailto:fulano@mail.com?cc=beltrano@mail.com
+                    &bcc=ciclano@mail.com
+                    &subject=TituloDoEmail
+                    &body=E-mail teste, favor não responda">
+                    Entre em contato por e-mail
+                </a> <br/>
+                Autoria: Augusto J. Rizzi
+            </address>
+        </footer>
+    </div>
+</html>
