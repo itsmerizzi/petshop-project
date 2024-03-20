@@ -1,10 +1,3 @@
-IMPORTANTE: Para testarem o projeto, baixem o arquivo petshopProject, esse é um arquivo ZIP
-contendo todos os arquivos necessários para rodar o projeto. É nele inclusive em que estão
-as imagens, que são extramente importantes para uma melhor experiência de usuário.
-
-Sabendo disso, podemos continuar...
-
-
 Instruções de Uso
 
 Menu de Navegação:
